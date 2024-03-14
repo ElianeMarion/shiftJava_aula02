@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class DecisaoSimples {
+public class DecisaoCompleta {
     public static void main(String[] args) {
         Scanner leitor = new Scanner(System.in);
         int idade;
@@ -13,12 +13,8 @@ public class DecisaoSimples {
         //resultado => boolean (V ou F)
         if (idade < 16)
             System.out.println("Não pode votar!");
-
-        if(idade < 12 )
-        {
-            System.out.println("Não pode jogar!");
-            System.out.println("Este jogo não é recomendado por conter violência");
-        }
+        else
+            System.out.println("Já pode votar!");
 
     }
 }
